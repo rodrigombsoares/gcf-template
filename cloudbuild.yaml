@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - cloud_function_name 
+  - --source=./cloud_function_name
+  - --trigger-http
+
